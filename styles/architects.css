@@ -41,7 +41,6 @@
   font-weight: 600;
 }
 
-/* Ekhane problem thakte pare !!!!! */
 main{
   max-width: 1440px;
   margin: 0 auto;
@@ -157,6 +156,10 @@ main > section{
   font-weight: 700;
 }
 
+.featured-architect img{
+  width: 100%;
+}
+
 /* some facts related style */
 .facts-container{
   display: grid;
@@ -212,8 +215,13 @@ main > section{
 @media screen and (max-width: 576px) {
   .navbar, 
   .nav-links, 
+  .features,
   .teams{
     flex-direction: column;
+  }
+
+  header{
+    width: 100%;
   }
 
   .team-img-container, 
@@ -235,11 +243,16 @@ main > section{
   .our-features{
   margin-left: 20px;
 }
+
+#experience-badge{
+  margin-top: 20px;
+  margin-left: 20px;
+}
 }
 
 /* medium devices */
 @media screen and (min-width: 576px) and (max-width: 992px){
-  .teams{
+  .teams, .features{
     flex-direction: column;
   }
 
@@ -251,5 +264,10 @@ main > section{
     grid-template-columns:repeat(2, 1fr);
     gap: 50px;
     justify-items: center;
+  }
+
+  #experience-badge{
+  margin-top: 20px;
+  margin-left: 20px;
   }
 }
